@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+/* css Document */
+
+html {
+    font-size: 72, 5%;
+}
+
+body {
+    background-color: #dcdcdc;
+    margin: auto;
+}
+
+.wrapper-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#wrapper-right {
+    flex-direction: column;
+    width: 700px;
+    border-radius: 0px 10px 10px 0px;
+    height: 750px;
+    background-color: #ffffff;
+    padding-left: 0px;
+    text-align: left;
+    font-family: quicksand;
+    margin-top: 100px;
+}
+
+#logout-wrapper {
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 60px;
+    width: 700px;
+    text-align: right;
+    text-decoration: none;
+    font-family: alex brush;
+    color: #5c3b26;
+    font-size: 35px;
+}
+
+#logout-button {
+    width: 150px;
+    float: right;
+    text-decoration: none;
+    font-family: alex brush;
+    color: #5c3b26;
+    font-size: 35px;
+}
+
+#welcome-title {
+    float: left;
+    position: absolute;
+    width: 300px;
+    text-align: right;
+    text-decoration: none;
+    font-family: alex brush;
+    color: #5c3b26;
+    font-size: 35px;
+}
+
+#wrapper-left {
+    flex-direction: column;
+    border-radius: 10px 0px 0px 10px;
+    width: 400px;
+    margin-top: 100px;
+    padding-top: 0px;
+    ;
+    background-color: #a5c1b9;
+    text-align: center;
+}
+
+#weather-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.calendar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 100%;
+    height: 53 rem;
+}
+
+.months {
+    width: 100%;
+    border-radius: 0px 10px 0px 0px;
+    height: 12rem;
+    background-color: #f2e3cf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.date {
+    color: #ffffff;
+}
+
+#displayMonth {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#displayDate {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.weekdays-wrapper {
+    width: 100%;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays-wrapper div {
+    font-size: 1.5rem;
+    letter-spacing: 0.1;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    width: calc(100%/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar-days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.all-days {
+    width: calc(98%/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-days:hover {
+    background-color: #a5c1b9;
+    border-radius: 70%;
+}
+
+.all-days-dot {
+    text-decoration: underline;
+    color: #b3d6c3;
+}
+
+.today {
+    background-color: #b3d6c3;
+    border-radius: 70%;
+    color: #000000;
+}
+
+.event-on-this-day {
+    height: 10px;
+    width: 10px;
+    background-color: #a5c1b9;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0, 1;
+    color: #bcbcbc;
+    cursor: pointer;
+}
+
+#eventBox {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 2px 2px #aaaaaa;
+}
+
+.current-day-left {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 15%;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.current-week-day-left {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#current-events {
+    display: none;
+    padding: 20px;
+}
+
+#event-title {
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.event-title {
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#list-events {
+    text-align: left;
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #5c3b26;
+    font-size: 15px;
+}
+
+#note-box {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.add-event {
+    margin: 20px;
+    border-bottom: 1px solid white;
+}
+
+input[type="text"] {
+    background-color: #f4e2d0;
+    width: 250px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-style: none;
+    box-shadow: 1px 2px 2px #aaaaaa;
+    border-radius: 25px;
+    font-family: lato;
+    color: #916d3d;
+    font-size: 13px;
+}
+
+.custom-select {
+    padding: 10px;
+    border-radius: 25px;
+    font-family: lato;
+    color: #916d3d;
+    font-size: 13px;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #f4e2d0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-selected {
+    background-color: #f4e2d0;
+}
+
+#save {
+    border: none;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #a5c1b9;
+    font-family: lato;
+    cursor: pointer;
+}
+
+#close {
+    border: none;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ac545a;
+    font-family: lato;
+    cursor: pointer;
+}
+
+#error-message {
+    font-family: lato;
+    font-size: 25px;
+    color: #f49538;
+}
